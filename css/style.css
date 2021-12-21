@@ -1,0 +1,641 @@
+:root {
+  --theme-color: #2196f3;
+  --second-color: #ffffff;
+  --logostudio-color: #000000;
+
+  --background-first: #2f303a;
+  --background-section-list: #e5e5e5;
+  --background-third: #f5f4fa;
+
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --text-third: rgba(255, 255, 255, 0.6);
+
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+body {
+  font-size: 14px;
+  font-family: var(--primary-font), sans-serif;
+  letter-spacing: 0.03em;
+  color: var(---text-primary);
+  background-color: var(--second-color);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: var(--second-color);
+}
+
+button {
+  font-family: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.section-padding-bottom {
+  padding-bottom: 94px;
+}
+
+/* =========== HEADER =========== */
+
+.container .iteam:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-div {
+  display: flex;
+  align-items: baseline;
+}
+
+.line {
+  margin: 0px;
+  border: 1px solid #ececec;
+}
+
+/* =========== WebStudio =========== */
+
+.header-logo {
+  padding: 24px 0px 25px 0px;
+  margin-right: 93px;
+  display: block;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header-logoweb {
+  color: var(--theme-color);
+}
+
+.header-logostudio {
+  color: var(--logostudio-color);
+}
+/* =========== Navigator=========== */
+
+.navigator-link:hover,
+.navigator-link:focus {
+  color: var(--theme-color);
+}
+
+.navigator-link.current {
+  color: var(--theme-color);
+}
+
+.navigator {
+  display: flex;
+}
+
+.navigator-link {
+  display: block;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+/* =========== Contacts =========== */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--theme-color);
+}
+
+.webpost {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contact:hover .webpost,
+.contact:focus .webpost {
+  fill: var(--theme-color);
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contact:hover .smartphone,
+.contact:focus .smartphone {
+  fill: var(--theme-color);
+}
+
+/* =========== MAIN =========== */
+
+/* =========== Hero-section =========== */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: #c4c4c4;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+    url(../images/hero/hero-img.jpg);
+}
+
+.div-hero {
+  text-align: center;
+}
+
+.hero-headline {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.button.primary {
+  display: inline-block;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--second-color);
+  background: var(--theme-color);
+}
+
+/* =========== Section-list =========== */
+
+.section-list {
+  padding-top: 94px;
+}
+
+.title-seo {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.div-list .list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-scroll {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.list-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.list-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 270px;
+
+  line-height: 1.71;
+  color: var(--text-secondary);
+}
+
+.icon-antenna {
+  display: flex;
+  padding: 25px 100px;
+  height: 120px;
+  width: 270px;
+
+  background-color: var(--background-third);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/* =========== What are we doing =========== */
+
+.about {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.image-about:not(:first-child) {
+  margin-top: 0;
+  margin-left: 30px;
+}
+
+.title-img {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* =========== Masters =========== */
+
+.section-masters {
+  padding-top: 94px;
+  background: var(--background-third);
+}
+
+.masters-list {
+  display: flex;
+}
+
+.title-masters {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.pfoto {
+  margin-bottom: 30px;
+}
+
+.masters {
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--second-color);
+}
+
+.masters:not(:last-child) {
+  margin-right: 30px;
+}
+
+.name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--text-primary);
+}
+
+.profession {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--text-secondary);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  margin-top: 16px;
+
+  border-radius: 50%;
+}
+
+.socials-icons:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social {
+  display: block;
+  padding: 12px;
+
+  fill: #afb1b8;
+}
+
+.social:hover,
+.social:focus {
+  fill: #ffffff;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--theme-color);
+}
+
+/* =========== CLIENTS =========== */
+
+.clients-div {
+  padding-top: 94px;
+}
+
+.title-clients {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.clients {
+  display: flex;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16 32;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-logo {
+  fill: #afb1b8;
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+  fill: var(--theme-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--theme-color);
+}
+
+/* =========== FOOTER =========== */
+
+.footer-section {
+  padding: 60px 0px;
+  background: var(--background-first);
+}
+
+.footer-div {
+  display: flex;
+}
+
+/* =========== Footer WebStudio =========== */
+
+.footer-logo {
+  margin-bottom: 20px;
+
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-logoweb {
+  color: var(--theme-color);
+}
+
+.footer-logostudio {
+  color: var(--second-color);
+}
+
+/* =========== Address =========== */
+
+.box-contact {
+  margin-right: 70px;
+}
+
+.footer-contact.address {
+  color: var(--second-color);
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+}
+
+.element:hover,
+.element:focus {
+  color: var(--theme-color);
+}
+
+.footer-elements > li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact {
+  padding: 0;
+
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--text-third);
+}
+
+/* =========== join section =========== */
+
+.title-join {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social {
+  display: block;
+  padding: 12px;
+
+  fill: #ffffff;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--theme-color);
+}
+
+/* =========== Footer styles ends here =========== */
+
+/* =========== PORTFOLIO.HTML styles starts here =========== */
+
+.portfolio-main {
+  padding: 94px 0px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--second-color);
+  background: var(--theme-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.preview {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.border {
+  padding-top: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.preview:hover,
+.preview:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.preview:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.preview:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.img {
+  display: block;
+}
+
+.products-name {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+}
+
+.menu-link {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-secondary);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* =========== PORTFOLIO.HTML styles ends here =========== */
