@@ -59,7 +59,7 @@
         <section class="hero section-padding-bottom"> 
             <div class="container div-hero">
                 <h1 class="hero-headline">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="button primary" type="button">Заказать услугу</button>
+                <button class="button primary" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -371,5 +371,17 @@
             </div>
         </div>
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal"></div>
+    
+    <button class="modal-close" data-modal-close>
+        <svg class="footer-social" width="44" height="44">
+            <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+    </button>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
