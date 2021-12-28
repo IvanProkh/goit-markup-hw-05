@@ -179,7 +179,6 @@ ul {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
     url(../images/hero/hero-img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
 }
 
@@ -271,6 +270,21 @@ ul {
 
 /* =========== What are we doing =========== */
 
+.title-img {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* .about img {
+  padding: 0;
+} */
+
 .about {
   display: flex;
   margin-top: 0;
@@ -281,15 +295,34 @@ ul {
   margin-left: 30px;
 }
 
-.title-img {
-  margin-top: 0px;
-  margin-bottom: 50px;
+.image-about {
+  position: relative;
+}
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+.about-div {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.text-about {
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
   text-align: center;
-  color: var(--text-primary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* =========== Masters =========== */
@@ -645,6 +678,8 @@ ul {
 }
 /* =========== PORTFOLIO.HTML styles ends here =========== */
 
+/* =========== BACKDROP =========== */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -653,15 +688,13 @@ ul {
   height: 100%;
   width: 100%;
 
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-}
-
-modal-close {
 }
 
 .modal {
@@ -677,4 +710,22 @@ modal-close {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  padding: 9 9 10 10;
+  fill: #000000;
 }
