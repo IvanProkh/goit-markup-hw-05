@@ -106,7 +106,21 @@ ul {
   color: var(--theme-color);
 }
 
+.current::after {
+  content: '';
+  /* position: absolute; */
+  left: 0;
+  top: 100%;
+
+  height: 4px;
+  width: 5px;
+
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
 .navigator {
+  position: relative;
   display: flex;
 }
 
@@ -270,6 +284,12 @@ ul {
 
 /* =========== What are we doing =========== */
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .title-img {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -281,15 +301,6 @@ ul {
   color: var(--text-primary);
 }
 
-/* .about img {
-  padding: 0;
-} */
-
-.about {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .image-about:not(:first-child) {
   margin-top: 0;
   margin-left: 30px;
@@ -301,6 +312,7 @@ ul {
 
 .about-div {
   position: absolute;
+
   bottom: 0;
   display: flex;
   align-items: center;
@@ -313,13 +325,12 @@ ul {
 }
 
 .text-about {
-  padding: 0;
   margin: 0;
 
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -693,7 +704,7 @@ ul {
 
 .backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   pointer-events: none;
 }
 
@@ -712,7 +723,10 @@ ul {
   border-radius: 4px;
 }
 
-.modal-close {
+button.modal-close {
+  margin: 0;
+  padding: 0;
+
   position: absolute;
   top: 8px;
   right: 8px;
@@ -726,6 +740,7 @@ ul {
 }
 
 .close {
-  padding: 9 9 10 10;
+  display: block;
+  padding: 10 10 10 10;
   fill: #000000;
 }
