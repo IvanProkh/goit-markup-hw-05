@@ -108,12 +108,12 @@ ul {
 
 .current::after {
   content: '';
-  /* position: absolute; */
+  position: absolute;
   left: 0;
   top: 100%;
 
   height: 4px;
-  width: 5px;
+  width: 100%;
 
   background-color: #2196f3;
   border-radius: 2px;
@@ -284,7 +284,13 @@ ul {
 
 /* =========== What are we doing =========== */
 
-.img {
+.about {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.about .img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -310,10 +316,14 @@ ul {
   position: relative;
 }
 
+/* ВНИМАНИЕ! - КОСТИЛЬ (нижний отступ картинки, bottom должен быть 0)*/
+
 .about-div {
   position: absolute;
+  bottom: 4px;
 
-  bottom: 0;
+  align-items: center;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,7 +340,7 @@ ul {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -724,9 +734,6 @@ ul {
 }
 
 button.modal-close {
-  margin: 0;
-  padding: 0;
-
   position: absolute;
   top: 8px;
   right: 8px;
@@ -740,7 +747,13 @@ button.modal-close {
 }
 
 .close {
-  display: block;
-  padding: 10 10 10 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  /* padding: 9 9 10 10; */
   fill: #000000;
 }
