@@ -105,11 +105,11 @@ header {
   color: var(--theme-color);
 }
 
-.navigator-link::after .current {
+.navigator-link.current::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   height: 4px;
   width: 100%;
@@ -118,8 +118,11 @@ header {
   border-radius: 2px;
 }
 
-.navigator {
+.iteam .navigator-link {
   position: relative;
+}
+
+.navigator {
   display: flex;
 }
 
